@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML JAVASCRIPTS</title>
+</head>
+<body>
+
+	<center><iframe src=""></iframe></center>
+
+	<h2>Javascript help change the content</h2>
+	<p id="content">Im using javascipt to change the content</p>
+	<button type="button" onclick='document.getElementById("content").innerHTML = "Hello Javascript!"'>Change the Content</button>
+
+	<h2>Javascript help change the style</h2>
+	<p id="style1">Im using javascipt to change the style</p>
+
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.fontSize="40px";
+			document.getElementById("style1").style.fontFamily="Papyrus";
+			document.getElementById("style1").style.color="pink";
+			document.getElementById("style1").style.backgroundColor="black";
+		}
+	</script>
+
+
+	<button type="button" onclick="myStyle()">Click Here!</button>
+
+	<h2>Javascript change the attributes @ image manipulation</h2>
+
+	<script>
+		function lamp(a)
+		{
+			var picture;
+			if (a==0)
+			{
+				picture="image/off.jpg"
+			}
+			else
+			{
+				picture="image/on.jpg"
+			}
+			document.getElementById('pic').src=picture;
+		}
+	</script>
+
+	<img src="image/off.jpg" id="pic" width="200" height="200">
+
+	<p>
+		<button type="button" onclick="lamp(1)">Turn ON</button>
+		<button type="button" onclick="lamp(0)">Turn OFF</button>
+	</p>
+
+	<h2>Popup Window Alert Box</h2>
+
+	<button onclick="myAlertBox()">Click Here</button>
+
+	<script>
+		function myAlertBox()
+		{
+			alert("Assalamualaikum. \n Welcome to my page.")
+		}
+	</script>
+
+	<script>
+		{
+			alert("Assalamualaikum. \n Welcome to my page.")
+		}
+	</script>
+
+	<h2>Maps</h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.6947356813844!2d102.2709238744768!3d5.757002931596809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1734228380886!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>
